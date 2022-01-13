@@ -12,7 +12,8 @@ public class ProcesaLista {
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
 
-        for (int i=0; i < args.length; i++) {
+        int i=0;
+        while (i < args.length) {
             int x =0;
 
             try {
@@ -27,9 +28,10 @@ public class ProcesaLista {
 
             suma = suma + x;
 
+            i++;
         }
 
-            System.out.println("suma = " + suma);
+        System.out.println("suma = " + suma);
             System.out.println("minimo = " + min);
             System.out.println("maximo = " + max);
             System.out.println("media = " + (suma/ args.length));
